@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Railway Ticket Helper</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+  <h1>🚆 Railway Ticket Helper</h1>
+  <p class="muted">Prepare your details quickly. Booking, CAPTCHA, OTP and payment remain manual.</p>
+
+  <label>From station<input id="from" placeholder="Dhaka"></label>
+  <label>To station<input id="to" placeholder="Chattogram"></label>
+  <label>Journey date<input id="date" type="date"></label>
+  <label>Train (optional)<input id="train" placeholder="Train name/number"></label>
+  <label>Class
+    <select id="class">
+      <option>Shuvon</option><option>Shuvon Chair</option><option>Snigdha</option>
+      <option>AC Seat</option><option>AC Berth</option>
+    </select>
+  </label>
+  <label>Passengers<input id="passengers" type="number" min="1" max="4" value="1"></label>
+
+  <section id="passengerBox"></section>
+
+  <div class="buttons">
+    <button id="save">💾 Save trip</button>
+    <button id="open">🌐 Open booking site</button>
+    <button id="clear" class="secondary">Clear</button>
+  </div>
+
+  <div id="status" class="status"></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

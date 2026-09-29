@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "Railway Ticket Helper",
+  "version": "1.0.0",
+  "description": "Prepare Bangladesh Railway ticket details quickly. Booking actions remain manual.",
+  "action": {"default_popup": "index.html"},
+  "permissions": ["storage"]
+}
